@@ -1,23 +1,23 @@
-# Image-Classification
+* Image Classification
 
-This code implements a Convolutional Neural Network (CNN) for image classification.
-The CNN consists of two convolutional layers with ReLU activation functions, followed by MaxPooling layers.
-The output is flattened and fed into a dense layer with ReLU activation, and finally another dense layer with softmax activation for classification.
-The model takes images of size 224x224x3 as input and outputs a probability distribution over 5 classes.
-The optimizer used is Adam and the loss function is categorical cross-entropy.
+This code presents a Convolutional Neural Network (CNN) designed for image classification. 
+The CNN architecture includes two convolutional layers with ReLU activation functions, followed by MaxPooling layers. 
+The output is flattened and passed through a dense layer with ReLU activation, followed by another dense layer with softmax activation for classification. 
+The model takes input images sized 224x224x3 and produces a probability distribution over 5 classes. 
+The optimization is done using the Adam optimizer, and the categorical cross-entropy loss function is employed.
 
+* Training Overview:
 
-## Training Process:
+The dataset is loaded using ImageDataGenerator with rescaling and a validation split.
+Separate generators are created for training and validation data, each with a batch size of 32.
+The model undergoes training for 10 epochs, during which accuracy and loss metrics are tracked.
+After each epoch, the model is evaluated on the validation data.
+Training and validation accuracy are plotted over time.
+The loss on both the training and validation sets is visualized over the training process.
 
-* The dataset is loaded using ImageDataGenerator with rescaling and validation split.
-* Separate generators are created for training and validation data with a batch size of 32.
-* The model is trained for 10 epochs and the accuracy and loss are monitored.
-* The model is evaluated on the validation data after each epoch.
-* The training accuracy and validation accuracy are plotted over time.
-* The loss on both the training and validation set is also plotted over time.
+* Results:
 
-## Results:
-* The model achieves a validation accuracy of 87.10% after 10 epochs.
-* The training and validation accuracy curves show that the model is learning and generalizing well and the plots are attached the repository.
-* The loss curves show that the model is able to optimize the loss function effectively.
-* The model is successfully trained and can be used to classify images into 5 different classes.
+After 10 epochs, the model achieves a commendable validation accuracy of 87.10%.
+Examination of the training and validation accuracy curves indicates that the model effectively learns and generalizes well. Refer to the attached repository for visualization plots.
+The loss curves demonstrate the model's proficiency in optimizing the loss function.
+In summary, the model is successfully trained and ready for classifying images into 5 distinct classes.
