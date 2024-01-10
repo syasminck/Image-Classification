@@ -1,4 +1,4 @@
-*Image Classification
+Image Classification
 
 This code presents a Convolutional Neural Network (CNN) designed for image classification. 
 The CNN architecture includes two convolutional layers with ReLU activation functions, followed by MaxPooling layers. 
